@@ -1,0 +1,9 @@
+x = input()
+st = []
+
+while x:
+    st.append(x)
+    x = input()
+
+for i in set(st):
+    print(f'{i} | {st.count(i)}')
