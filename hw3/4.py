@@ -5,10 +5,9 @@ while x:
     st.append(x)
     x = input()
 
-print('Elements:') 
 for i in set(st):
+    print('Elements:') 
     print(i) 
-print('repeats:') 
-for i in set(st):   
+    print('repeats:') 
     print(st.count(i))
-    
+    print('  ')
