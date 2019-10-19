@@ -1,8 +1,8 @@
 import re
-Ex = input('Example: ')
-s = ''.join(re.findall(r'[+, - ,*,/,%,**]', Ex))
-index = Ex.find(s)
-x, y = Ex.split(s)
+ex = input('Example: ')
+s = ''.join(re.findall(r'[+, - ,*,/,%,**]', ex))
+index = ex.find(s)
+x, y = ex.split(s)
 x, y = float(x), float(y)
 op = {
 '+': x + y,
