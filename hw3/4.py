@@ -6,7 +6,7 @@ while x:
     x = input()
 
 for i in set(st):
-    print('Elements:') 
+    print('Element:') 
     print(i) 
     print('repeats:') 
     print(st.count(i))
