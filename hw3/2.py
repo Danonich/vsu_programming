@@ -1,6 +1,6 @@
 s = int(input('Chislo: '))
 
-if (0 < s < 3) or (s==12):
+if 0 < s < 3 or s == 12:
     print("Zima")
 elif 2 < s < 6:
     print("Vesna")
