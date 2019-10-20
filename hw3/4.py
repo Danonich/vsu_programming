@@ -10,4 +10,4 @@ for i in set(st):
     print(i) 
     print('repeats:') 
     print(st.count(i))
-    print('  ')
+    
