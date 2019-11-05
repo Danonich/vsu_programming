@@ -27,21 +27,21 @@ def del_value(key):
             storage[ind].remove(i)
             break
 
-set_value('plz', 1)
-set_value('plz', 10)
+set_value('adc', 1)
+set_value('abc', 10)
 
-set_value('me', 5)
-set_value('me', 25)
+set_value('cba', 5)
+set_value('cba', 25)
 
-set_value('kill', 1)
-set_value('kill', 2)
+set_value('xyz', 1)
+set_value('xyz', 2)
 
 print(storage)
 
-del_value('plz')
+del_value('cba')
 
-print(get_value('plz'))
-print(get_value('me'))
-print(get_value('kill'))
+print(get_value('abc'))
+print(get_value('cba'))
+print(get_value('xyz'))
 
 print(storage)
