@@ -10,7 +10,7 @@ people = {
     'Vova': ['Vlados', 'Oleja']
 }
 
-d = deque(people['Alice'])
+deq = deque(people['Alice'])
 checked_people = []
 while deq:
     chel = deq.popleft()
