@@ -16,8 +16,9 @@ while deq:
     chel = deq.popleft()
     if chel not in checked_people:
         if potomushto_ti_doter(chel):
-            return chel
+            print(chel)
     else:
         deq += people.get(chel, [])
-        checked_people.append(chel)
-    return 'Nobody players in Dota'
+    checked_people.append(chel)
+print('Nobody players in Dota')
+
