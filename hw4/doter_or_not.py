@@ -1,24 +1,25 @@
 from collections import deque
 
-def potomushto_ti_doter(s):
+def is_dota_player(s):
     return not len(s) % 2 and s[0] == 'D'
 
 people = {
-    'Alice': ['Vova', 'Vlados', 'Diana'],
-    'Vlados': ['Lila', 'Ahmed'],
-    'Diana': ['Daniel'],
-    'Vova': ['Vlados', 'Oleja']
+    'Alice': ['Bob', 'Diman', 'Vlad', 'Diana'],
+    'Vlad': ['Lula', 'Ahmad'],
+    'Diana': ['Dima'],
+    'Bob': ['Vlad', 'Oleg']
 }
 
 deq = deque(people['Alice'])
 checked_people = []
+
 while deq:
     chel = deq.popleft()
     if chel not in checked_people:
-        if potomushto_ti_doter(chel):
-            print(chel)
-    else:
-        deq += people.get(chel, [])
-    checked_people.append(chel)
-print('Nobody players in Dota')
-
+        if is_dota_player(chel):
+            print(chel,'is play in Dota')
+        else:
+            deq += people.get(chel, [])
+        checked_people.append(chel)
+print('Dont play in Dota')
+print(checked_people)
