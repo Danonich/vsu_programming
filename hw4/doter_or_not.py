@@ -17,9 +17,10 @@ while deq:
     chel = deq.popleft()
     if chel not in checked_people:
         if is_dota_player(chel):
-            print(chel,'is play in Dota')
+            print(chel, 'is play in Dota')
+            break
         else:
             deq += people.get(chel, [])
         checked_people.append(chel)
-print('Dont play in Dota')
-print(checked_people)
+else:
+    print('Dont play in Dota')
