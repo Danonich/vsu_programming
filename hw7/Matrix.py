@@ -1,21 +1,22 @@
 class Matrix:
 
     def __init__(self):
-        self.string = None
-        self.row = None
+        self.row = 0
+        self.column = 0
         self.matrix = []
 	
     def putin(self):
-        self.string = int(input("Strings: "))
         self.row = int(input("Rows: "))
+        self.column = int(input("Column: "))
         print("Elements: ")
-        self.matrix = [[input() for j in range(self.row)] for i in range(self.string)]
+        self.matrix.append([[input() for a in range(self.column)] for b in range(self.row)])
         print()
     def printMatrix(self): 
         print("Matrix: ")
-        matrix = self.matrix
-        for i in range(len(matrix)):
-            print(matrix[i])
+        for row in self.matrix:
+            for matrix in row:
+                print(matrix, end=' ')
+                print()
 
 
 example = Matrix()
