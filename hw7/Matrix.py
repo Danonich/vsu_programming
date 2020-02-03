@@ -9,14 +9,15 @@ class Matrix:
         self.row = int(input("Rows: "))
         self.column = int(input("Column: "))
         print("Elements: ")
-        self.matrix.append([[input() for a in range(self.column)] for b in range(self.row)])
+        for a in range(self.column):
+            self.matrix.append([input() for b in range(self.row)])
         print()
     def printMatrix(self): 
         print("Matrix: ")
-        for row in self.matrix:
-            for matrix in row:
-                print(matrix, end=' ')
-                print()
+        for x in self.matrix:
+            print(' '.join(str(m) for m in x))
+
+
 
 
 example = Matrix()
