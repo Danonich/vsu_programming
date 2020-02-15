@@ -14,12 +14,16 @@ class Matrix:
         print()
     def __str__(self): 
         print("Matrix: ")
+        f = ' '
         for x in self.matrix:
-            print(' '.join(str(m) for m in x))
+            f += '\n'
+            for m in x:
+                f += f'{m}  '
+        return f
 
 
 
 
 example = Matrix()
 example.putin()
-example.__str__()
+print(example)
