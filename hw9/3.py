@@ -23,7 +23,7 @@ class Matrix2x2(Matrix):
                 for b in range(self.row):
                     arg1 = self.matrix[0][0] * self.matrix[self.row - 1][self.column - 1]
                     arg2 = self.matrix[0][self.column - 1] * self.matrix[self.row - 1][0]
-            print("Determinant 2x2:", arg1 + arg2)                    
+            print("Determinant 2x2:", arg1 - arg2)                    
             
 example = Matrix2x2()
 example.putin()
